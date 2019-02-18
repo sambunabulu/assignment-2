@@ -1,20 +1,23 @@
-function getTriangle(){
-var a = parseFloat(prompt("side a"));
-var b = parseFloat(prompt("side b"));
-var c = parseFloat(prompt("side c"));
-
-
-
- if(a===b && a===c && b===c){
-alert("Equilateral");
+var triangle= function getTriangle(){
+var a = parseFloat(prompt("side a").value);
+var b = parseFloat(prompt("side b").value);
+var c = parseFloat(prompt("side c").value);
+var triangleType = function(side a, side b, side c){
+if (isTriangle(side a, side b, side c)){
+return triangleType(side a, side b, side c)}
+else{
+  return alert("These sides do not make a triangle");
 }
-else if(a===b || a===c || b===c){
-alert("Isosceles");
+};
+ if ((side a === side b) && (side a === side c ) && (side b === side c)){
+return alert("Equilateral");
 }
-else if((a+b)<= c || (a+c)<=b || (b+c)<=a) {
-alert("Not a Triangle");
+else if((side a === side b) ||(side a === side c)|| (side b === side c)){
+return alert("Isosceles");
 }
-else if((a+b)>=c && (b+c)>=a && (a+c)>=b {
-  alert("Scalene");}
+else if(((side a + side b)>= side c) && ((side b +side c)>=a) && ((side a +side c)>=side b) {
+  return alert("Scalene");
 }
+}
+};
 getTriangle();
