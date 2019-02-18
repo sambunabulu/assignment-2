@@ -1,15 +1,15 @@
-var triangle= function getTriangle(){
-var a = parseFloat(prompt("side a").value);
-var b = parseFloat(prompt("side b").value);
-var c = parseFloat(prompt("side c").value);
+function getTriangle(){
+  var a = parseFloat(document.getElementById("side a").value);
+  var b = parseFloat(document.getElementById("side b").value);
+  var c = parseFloat(document.getElementById("side c").value);
 
- if ((side a === side b) && (side a === side c ) && (side b === side c)){
-return alert("Equilateral");
-}
-else if((side a === side b) ||(side a === side c)|| (side b === side c)){
-return alert("Isosceles");
-}
-else if(((side a + side b)>= side c) && ((side b +side c)>=a) && ((side a +side c)>=side b) {
-  return alert("Scalene");
-}
+  if ((a === b) && (a === c ) && (b === c)){
+    return alert("Equilateral");
+  }
+  else if((a === b) || (a === c)|| (b === c)){
+    return alert("Isosceles");
+  }
+else if(((a + b)>= c) && ((b + c)>=a) && ((a + c)>= b)){
+    return alert("Scalene");
+  }
 };
