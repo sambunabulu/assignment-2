@@ -4,12 +4,12 @@ function getTriangle(){
   var c = parseFloat(document.getElementById("side c").value);
 
   if ((a === b) && (a === c ) && (b === c)){
-    return alert("Equilateral");
+    alert("Equilateral");
   }
   else if((a === b) || (a === c)|| (b === c)){
-    return alert("Isosceles");
+     alert("Isosceles");
   }
 else if(((a + b)>= c) && ((b + c)>=a) && ((a + c)>= b)){
-    return alert("Scalene");
+     alert("Scalene");
   }
 };
