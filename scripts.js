@@ -6,10 +6,13 @@ function getTriangle(){
   if ((a === b) && (a === c ) && (b === c)){
     alert("Equilateral");
   }
+  else if(((a + b)<= c) || ((b +c)<= a) || ((a + c)<= b)){
+    alert("Not a Triangle");
+  }
   else if((a === b) || (a === c)|| (b === c)){
      alert("Isosceles");
   }
-else if(((a + b)>= c) && ((b + c)>=a) && ((a + c)>= b)){
+  else if(((a + b)>= c) && ((b + c)>= a) && ((a + c)>= b)){
      alert("Scalene");
   }
 };
